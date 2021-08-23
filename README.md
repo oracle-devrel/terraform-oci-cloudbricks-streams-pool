@@ -43,6 +43,7 @@ spool_num_partitions                   = "1"
 
 ### Variable specific considerations
 - If NSG is required, provide the name of a pre-created one under variable `streams_pool_nsg_name`. In any other case, drop the usage of this variable from configuration or pass it on as `""`
+- This module only supports private endpoint. Further support for public endpoint will be enabled, once [this bug](https://github.com/terraform-providers/terraform-provider-oci/issues/1436) is resolved
 
 ## Sample provider
 The following is the base provider definition to be used with this module
